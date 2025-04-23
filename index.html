@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktiv 3D Viewer</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js" defer></script>
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+         <div id="card-selector">
+             </div>
+
+         <div id="loading-indicator">Loading Model...</div>
+
+        <div id="info-box">
+            <button id="close-button">&times;</button>
+            <h3 id="info-title">Artifact Detail</h3>
+            <p id="info-content">Details about the selected point will appear here.</p>
+        </div>
+
+        <button id="reset-view-button">Nulstil Kamera</button>
+
+    </div>
+</body>
+</html>
